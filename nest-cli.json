@@ -1,0 +1,21 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/local-services/src",
+  "monorepo": true,
+  "root": "apps/local-services",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/local-services/tsconfig.app.json"
+  },
+  "projects": {
+    "local-services-landing": {
+      "type": "application",
+      "root": "apps/local-services-landing",
+      "entryFile": "main",
+      "sourceRoot": "apps/local-services-landing/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/local-services-landing/tsconfig.app.json"
+      }
+    }
+  }
+}
