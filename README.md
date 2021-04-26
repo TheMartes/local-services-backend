@@ -11,22 +11,23 @@
 
 ```bash
 $ npm install
+$ npm i -g @nestjs/cli
 ```
 
 ## Running the app
-
+### via docker
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker-compose up
 ```
 
-## Test
+### via system
+```bash
+$ nest start --watch <microservice>
+
+```
+*this requiries to have **@nestjs/cli** installed*
+
+### Test
 
 ```bash
 # unit tests
