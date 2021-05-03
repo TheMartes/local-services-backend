@@ -1,14 +1,14 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { LocalServicesLandingModule } from './../src/LocalServicesLanding.module';
+import { LandingPageModule } from './../src/landing-page.module';
 
-describe('LocalServicesLandingController (e2e)', () => {
+describe('LandingPageController (e2e)', () => {
   let app: INestApplication;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [LocalServicesLandingModule],
+      imports: [LandingPageModule],
     }).compile();
 
     app = moduleFixture.createNestApplication();

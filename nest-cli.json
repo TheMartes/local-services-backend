@@ -1,20 +1,22 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/local-services/src",
+  "sourceRoot": "apps/landing-page/src",
   "monorepo": true,
-  "root": "apps/local-services",
+  "root": "apps/landing-page",
   "compilerOptions": {
     "webpack": true,
-    "tsConfigPath": "apps/local-services/tsconfig.app.json"
+    "tsConfigPath": "apps/landing-page/tsconfig.app.json"
   },
   "projects": {
-    "local-services-landing": {
+    "landing-page": {
       "type": "application",
-      "root": "apps/local-services-landing",
+      "root": "apps/landing-page",
+      "assets": ["apps/landing-page/views/**/*"],
+      "watchAssets": true,
       "entryFile": "main",
-      "sourceRoot": "apps/local-services-landing/src",
+      "sourceRoot": "apps/landing-page/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/local-services-landing/tsconfig.app.json"
+        "tsConfigPath": "apps/landing-page/tsconfig.app.json"
       }
     }
   }
